@@ -1,0 +1,24 @@
+.thumbnail {
+  width: 130px;
+  margin-right: 70px;
+  margin-bottom: 65px;
+}
+
+.thumbnail-img {
+  background-color: #d8d8d8;
+  height: 180px;
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.thumbnail-text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.default-img {
+  background-image: url('../assets/defaultbook.png');
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
