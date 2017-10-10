@@ -16,6 +16,12 @@
   line-height: 20px;
 }
 
+.thumbnail-title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
 .default-img {
   background-image: url('../assets/defaultbook.png');
   background-size: 75px 75px;

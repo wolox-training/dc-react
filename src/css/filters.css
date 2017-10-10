@@ -1,11 +1,12 @@
 .inputFilter {
-  height: 40px;
-  width: 240px;
   background-color: #f4f4f4;
   color: #9b9b9b;
+  height: 40px;
+  padding-left: 10px;
+  width: 240px;
 }
 
-select.inputFilter {
+.filter-select {
   margin-right: 30px;
 }
 

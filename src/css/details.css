@@ -14,8 +14,9 @@
   font-size: 15px;
   height: auto;
   min-height: 60px;
+  max-width: 560px;
   text-align: justify;
-  width: 560px;
+  width: 100%;
 }
 
 .details-container {
@@ -66,7 +67,8 @@
   height: auto;
   margin-bottom: 40px;
   min-height: 75px;
-  width: 670px;
+  max-width: 670px;
+  width: 100%;
 }
 
 .back-link {

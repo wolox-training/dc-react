@@ -1,30 +1,28 @@
 import React from 'react';
 import bookThumbnailCss from './css/bookThumbnail.css';
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
 
-class BookThumbnail extends React.Component {
-  constructor(){
-    super()
-    this.state = {
-      loaded: true
-    }
-  }
-  updateOnLoad(){
-    this.setState({loaded: false})
-  }
+const BookThumbnail = (props) => {
+  return (
+    <Link to={`/books/${props.id}`} className='flex-column thumbnail'>
+      {
+        (props.imgSrc !== null) ? (
+          <img className='thumbnail-img' src={props.imgSrc} />
+        ) : (
+          <div className='thumbnail-img default-img'></div>
+        )
+      }
+      <span className='thumbnail-title'>{props.title}</span>
+      <span className='thumbnail-text'>{props.author}</span>
+    </Link>
+  )
+}
 
-  render(){
-    return (
-      <Link to={`/books/${this.props.id}`} className='flex-column thumbnail'>
-        {
-          this.state.loaded && this.props.imgSrc !== null ?
-          <img className='thumbnail-img' src={this.props.imgSrc} onError={this.updateOnLoad.bind(this)}/> :
-            <div className='thumbnail-img default-img'></div>
-        }
-        <b className='thumbnail-text'>{this.props.title}</b>
-        <span className='thumbnail-text'>{this.props.author}</span>
-      </Link>
-    )
-  }
+BookThumbnail.propTypes = {
+  id: PropTypes.number,
+  imgSrc: PropTypes.string,
+  title: PropTypes.string,
+  author: PropTypes.string
 }
 export default BookThumbnail;

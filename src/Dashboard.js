@@ -5,15 +5,13 @@ import dashboardCss from './css/dashboard.css';
 import Filters from './Filters';
 
 class Dashboard extends React.Component {
-  constructor(){
-    super();
-    this.state = {
+
+  state = {
       filterValue: '',
-      filterType:''
-    }
+      filterType: ''
   }
 
-  handleFilterValue(value, type){
+  handleFilterValue = (value, type) => {
     this.setState({
       filterValue: value,
       filterType: type
@@ -28,7 +26,7 @@ class Dashboard extends React.Component {
 
     return (
       <div className='flex-column dashboard-container'>
-        <Filters filter={this.handleFilterValue.bind(this)} />
+        <Filters filter={this.handleFilterValue} />
         <div className='book-container flex'>
         {booksThumnails}
         </div>
