@@ -1,0 +1,28 @@
+.inputFilter {
+  background-color: #f4f4f4;
+  color: #9b9b9b;
+  height: 40px;
+  padding-left: 10px;
+  width: 240px;
+}
+
+.filter-select {
+  margin-right: 30px;
+}
+
+.buttomFilter {
+  background-color: #a5cd39;
+  height: 40px;
+  margin-left: -40px;
+  text-align: center;
+  width: 40px;
+}
+
+.magnifier-icon {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 40px;
+  transform: rotate(-45deg);
+}
